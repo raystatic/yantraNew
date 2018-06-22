@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_marginTop="5dp"
+    android:layout_centerHorizontal="true"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="@dimen/progessBar"
+        android:layout_height="@dimen/progessBar"
+        android:id="@+id/p1"
+        android:layout_margin="@dimen/progress_margin"
+        android:background="@drawable/rectangle">
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="@dimen/progessBar"
+        android:layout_height="@dimen/progessBar"
+        android:id="@+id/p2"
+        android:layout_margin="@dimen/progress_margin"
+        android:background="@drawable/rectangle">
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="@dimen/progessBar"
+        android:id="@+id/p3"
+        android:layout_margin="@dimen/progress_margin"
+        android:layout_height="@dimen/progessBar"
+        android:background="@drawable/rectangle">
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="@dimen/progessBar"
+        android:layout_height="@dimen/progessBar"
+        android:layout_margin="@dimen/progress_margin"
+        android:background="@drawable/rectangle"
+        android:id="@+id/p4">
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="@dimen/progessBar"
+        android:layout_height="@dimen/progessBar"
+        android:layout_margin="@dimen/progress_margin"
+        android:background="@drawable/rectangle"
+        android:id="@+id/p5">
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="@dimen/progessBar"
+        android:layout_margin="@dimen/progress_margin"
+        android:layout_height="@dimen/progessBar"
+        android:background="@drawable/rectangle"
+        android:id="@+id/p6">
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="@dimen/progessBar"
+        android:layout_height="@dimen/progessBar"
+        android:layout_margin="@dimen/progress_margin"
+        android:background="@drawable/rectangle"
+        android:id="@+id/p7">
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="@dimen/progessBar"
+        android:layout_height="@dimen/progessBar"
+        android:layout_margin="@dimen/progress_margin"
+        android:background="@drawable/rectangle"
+        android:id="@+id/p8">
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="@dimen/progessBar"
+        android:layout_height="@dimen/progessBar"
+        android:layout_margin="@dimen/progress_margin"
+        android:background="@drawable/rectangle"
+        android:id="@+id/p9">
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="@dimen/progessBar"
+        android:layout_height="@dimen/progessBar"
+        android:layout_margin="@dimen/progress_margin"
+        android:background="@drawable/rectangle"
+        android:id="@+id/p10">
+    </RelativeLayout>
+    </LinearLayout>

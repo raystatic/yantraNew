@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:ignore="MissingPrefix">
+
+    <ImageView
+        android:layout_marginTop="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/recommendation_1"
+        android:foregroundGravity="top"
+        android:layout_marginBottom="60dp"
+        android:id="@+id/rimage"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="bottom"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/threeIcons"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="80dp"
+                android:id="@+id/game"
+                android:layout_weight="1"
+                android:src="@drawable/recommendation_2"/>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:padding="10dp"
+                android:layout_height="80dp"
+                android:src="@drawable/recommendation_4"
+                android:layout_weight="1"
+                android:id="@+id/toy"/>
+
+            <ImageView
+                android:id="@+id/video"
+                android:layout_width="50dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:src="@drawable/recommendation_3" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/threeIcons"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.34"
+                android:text="Short Term Courses"
+                android:textAlignment="center"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.32"
+                android:text="Universities"
+                android:textAlignment="center"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.32"
+                android:text="Courses"
+                android:textAlignment="center"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    </RelativeLayout>

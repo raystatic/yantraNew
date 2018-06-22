@@ -1,0 +1,1006 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context="com.university.yantra.HelpDesk.HelpDeskActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/tool"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#ff0000"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Help Desk"
+                    android:id="@+id/tooltilte"
+                    android:textSize="20dp"
+                    android:layout_marginTop="18dp"
+                    android:textColor="@color/white"
+                    />
+
+                <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:background="?attr/selectableItemBackground"-->
+                <!--android:padding="13dp"-->
+                <!--android:id="@+id/cart"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:src="@mipmap/ic_cart"/>-->
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/darkwhite"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            android:id="@+id/help_linear_layout">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="@color/darkwhite"
+                android:layout_height="wrap_content"
+                android:id="@+id/contact_rel">
+
+
+                <TextView
+                    android:id="@+id/tv_contactUs_help"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerInParent="true"
+                    android:text="CONTACT US"
+                    android:textColor="@color/black"
+                    android:textSize="25dp" />
+
+                <View
+                    android:layout_width="35dp"
+                    android:layout_height="2dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginTop="23dp"
+                    android:layout_toLeftOf="@+id/tv_contactUs_help"
+                    android:background="@color/grey" />
+
+                <View
+                    android:layout_width="35dp"
+                    android:layout_height="2dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="23dp"
+                    android:layout_toRightOf="@+id/tv_contactUs_help"
+                    android:background="@color/grey" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_cancel_help"
+                    android:layout_width="match_parent"
+                    app:cardElevation="0dp"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="2dp"
+
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/img_cancel_help"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="15dp" />
+
+                        <TextView
+                            android:id="@+id/tv_cencel_help"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="15dp"
+                            android:layout_toRightOf="@+id/img_cancel_help"
+                            android:text="Cancel your booking"
+                            android:textColor="@color/black" />
+
+                        <ImageButton
+                            android:id="@+id/imgbtn_rightarraow_help"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="15dp"
+                            android:background="@color/white"
+                            android:src="@drawable/ic_action_rightarrow" />
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_below="@id/card_cancel_help"
+                    android:layout_height="2dp"
+                    android:background="@color/darkwhite"
+                    android:layout_weight="1"
+                    />
+
+                <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                    android:id="@+id/expandableLayout_cancel_help"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/card_cancel_help"
+                    app:ael_duration="500"
+                    app:ael_expanded="false"
+                    app:ael_orientation="vertical">
+
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <EditText
+                            android:id="@+id/et_name_cancel_help"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-15dp"
+                            android:backgroundTint="@color/grey"
+                            android:layout_marginRight="-15dp"
+                            android:hint="Your name *"
+                            android:padding="15dp"
+                            android:textSize="12dp" />
+
+                        <EditText
+                            android:id="@+id/et_email_cancel_help"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-15dp"
+                            android:backgroundTint="@color/grey"
+                            android:layout_marginRight="-15dp"
+                            android:hint="Email ID *"
+                            android:padding="15dp"
+                            android:textSize="12dp" />
+
+                        <EditText
+                            android:id="@+id/et_orderNumber_cancel_help"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-15dp"
+                            android:layout_marginRight="-15dp"
+                            android:hint="Booking number *"
+                            android:backgroundTint="@color/grey"
+                            android:padding="15dp"
+                            android:textSize="12dp" />
+
+                        <!--<RelativeLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="45dp"-->
+                        <!--android:background="@drawable/rectangle_border">-->
+
+                        <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:id="@+id/tv_subissue_cancel_help"-->
+                        <!--android:text="Select sub-issue * "-->
+                        <!--android:textSize="12dp"-->
+                        <!--android:layout_centerVertical="true"-->
+                        <!--android:layout_marginLeft="15dp"/>-->
+                        <!--<ImageView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:id="@+id/img_rightarrow_cancel_help"-->
+                        <!--android:src="@drawable/ic_action_rightarrow"-->
+                        <!--android:layout_alignParentEnd="true"-->
+                        <!--android:layout_centerVertical="true"-->
+                        <!--android:layout_marginRight="15dp"/>-->
+
+
+                        <!--</RelativeLayout>-->
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="5dp">
+
+                            <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:id="@+id/tv_desc_cancel_help"-->
+                            <!--android:text="Description"-->
+                            <!--android:textSize="12dp"/>-->
+                            <RelativeLayout
+                                android:id="@+id/rel_et_help"
+                                android:layout_width="match_parent"
+                                android:layout_height="125dp"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:background="@drawable/rectangle_border"
+                                android:padding="15dp">
+
+                                <EditText
+                                    android:id="@+id/et_desc_cancel_help"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="#00000000"
+                                    android:backgroundTint="@color/darkwhite"
+                                    android:hint="Desciption *"
+                                    android:padding="5dp"
+                                    android:textAlignment="textStart"
+                                    android:textSize="15dp" />
+
+                            </RelativeLayout>
+
+
+                            <Button
+                                android:id="@+id/btn_submit_cancel_help"
+                                android:layout_width="125dp"
+                                android:layout_height="55dp"
+                                android:layout_below="@+id/rel_et_help"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="19dp"
+                                android:background="@drawable/rectangle_border_button"
+                                android:text="Submit"
+                                android:textAlignment="center"
+                                android:textColor="@color/filter_blue"
+                                android:textSize="12dp" />
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_other_help"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    app:cardElevation="0dp"
+                    android:layout_below="@+id/expandableLayout_cancel_help"
+                    android:layout_marginTop="2dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/img_other_help"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="15dp" />
+
+                        <TextView
+                            android:id="@+id/tv_other_help"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="15dp"
+                            android:layout_toRightOf="@+id/img_other_help"
+                            android:text="Any Query"
+                            android:textColor="@color/black" />
+
+                        <ImageButton
+                            android:id="@+id/imgbtn_rightarraow_other_help"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="15dp"
+                            android:background="@color/white"
+                            android:src="@drawable/ic_action_rightarrow" />
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                    android:id="@+id/expandableLayout_other_help"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/card_other_help"
+                    app:ael_duration="500"
+                    app:ael_expanded="false"
+                    app:ael_orientation="vertical">
+
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <EditText
+                            android:id="@+id/et_name_other_help"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-15dp"
+                            android:layout_marginRight="-15dp"
+                            android:backgroundTint="@color/grey"
+                            android:hint="Your name *"
+                            android:padding="15dp"
+                            android:textSize="12dp" />
+
+                        <EditText
+                            android:id="@+id/et_email_other_help"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-15dp"
+                            android:layout_marginRight="-15dp"
+                            android:backgroundTint="@color/grey"
+                            android:hint="Email ID *"
+                            android:padding="15dp"
+                            android:textSize="12dp" />
+
+                        <EditText
+                            android:id="@+id/et_orderNumber_other_help"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-15dp"
+                            android:layout_marginRight="-15dp"
+                            android:backgroundTint="@color/grey"
+                            android:hint="Booking number *"
+                            android:padding="15dp"
+                            android:textSize="12dp" />
+
+                        <!--<RelativeLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="45dp"-->
+                        <!--android:background="@drawable/rectangle_border">-->
+
+                        <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:id="@+id/tv_subissue_other_help"-->
+                        <!--android:text="Select sub-issue * "-->
+                        <!--android:textSize="12dp"-->
+                        <!--android:layout_centerVertical="true"-->
+                        <!--android:layout_marginLeft="15dp"/>-->
+                        <!--<ImageView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:id="@+id/img_rightarrow_other_help"-->
+                        <!--android:src="@drawable/ic_action_rightarrow"-->
+                        <!--android:layout_alignParentEnd="true"-->
+                        <!--android:layout_centerVertical="true"-->
+                        <!--android:layout_marginRight="15dp"/>-->
+
+
+                        <!--</RelativeLayout>-->
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="125dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:background="@drawable/rectangle_border"
+                            android:padding="15dp">
+
+                            <EditText
+                                android:id="@+id/et_desc_other_help"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="#00000000"
+                                android:backgroundTint="@color/darkwhite"
+                                android:hint="Desciption *"
+                                android:padding="5dp"
+                                android:textAlignment="textStart"
+                                android:textSize="15dp" />
+
+
+                        </RelativeLayout>
+
+                        <Button
+                            android:id="@+id/btn_submit_other_help"
+                            android:layout_width="125dp"
+                            android:layout_height="55dp"
+                            android:layout_below="@+id/et_desc_other_help"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="19dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/rectangle_border_button"
+                            android:text="Submit"
+                            android:textColor="@color/filter_blue"
+                            android:textSize="12dp" />
+
+
+                    </LinearLayout>
+
+                </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rel_helpdesk"
+                    android:layout_width="match_parent"
+
+                    android:layout_height="100dp"
+                    android:background="@color/darkwhite"
+                    android:layout_below="@+id/expandableLayout_other_help"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_HelpDesk_help"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerInParent="true"
+                        android:text="Help Desk"
+                        android:textColor="@color/black"
+                        android:textSize="25dp" />
+
+                    <View
+                        android:layout_width="45dp"
+                        android:layout_height="2dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_marginTop="48dp"
+                        android:layout_toLeftOf="@+id/tv_HelpDesk_help"
+                        android:background="@color/grey" />
+
+                    <View
+                        android:layout_width="45dp"
+                        android:layout_height="2dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="48dp"
+                        android:layout_toRightOf="@+id/tv_HelpDesk_help"
+                        android:background="@color/grey" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/relHelpOptions"
+                    android:layout_below="@+id/rel_helpdesk">
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/card_orderplacements_help"
+                        android:layout_width="match_parent"
+                        app:cardElevation="0dp"
+                        android:visibility="gone"
+                        android:layout_height="55dp"
+                        >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="3dp"
+                            android:background="@color/white">
+
+
+                            <TextView
+                                android:id="@+id/tv_orderplacements_help"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="15dp"
+                                android:text="Order Placements"
+                                android:textColor="@color/black" />
+
+                            <ImageButton
+                                android:id="@+id/imgbtn_rightarraow_orderplacements_help"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="15dp"
+                                android:background="@color/white"
+                                android:src="@drawable/ic_action_rightarrow" />
+
+                        </RelativeLayout>
+
+                    </android.support.v7.widget.CardView>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_below="@id/card_orderplacements_help"
+                        android:layout_height="2dp"
+                        android:background="@color/darkwhite"
+                        android:layout_weight="1"
+                        />
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/card_payments_help"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        app:cardElevation="0dp"
+                        android:visibility="gone"
+                        android:layout_below="@+id/card_orderplacements_help"
+                        android:layout_marginTop="2dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+
+                            <TextView
+                                android:id="@+id/tv_payments_help"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="15dp"
+                                android:text="Payments"
+                                android:textColor="@color/black" />
+
+                            <ImageButton
+                                android:id="@+id/imgbtn_rightarraow_payments_help"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="15dp"
+                                android:background="@color/white"
+                                android:src="@drawable/ic_action_rightarrow" />
+
+                        </RelativeLayout>
+
+                    </android.support.v7.widget.CardView>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_below="@id/card_payments_help"
+                        android:layout_height="2dp"
+                        android:background="@color/darkwhite"
+                        android:layout_weight="1"
+                        />
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/card_shipping_help"
+                        android:layout_width="match_parent"
+                        app:cardElevation="0dp"
+                        android:layout_height="55dp"
+                        android:layout_below="@+id/card_payments_help"
+                        android:layout_marginTop="2dp"
+                        android:visibility="gone">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+
+                            <TextView
+                                android:id="@+id/tv_shipping_help"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="15dp"
+                                android:text="Shipping and Delivery Policies"
+                                android:textColor="@color/black" />
+
+                            <ImageButton
+                                android:id="@+id/imgbtn_rightarraow_shipping_help"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="15dp"
+                                android:background="@color/white"
+                                android:src="@drawable/ic_action_rightarrow" />
+
+                        </RelativeLayout>
+
+                    </android.support.v7.widget.CardView>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_below="@id/card_shipping_help"
+                        android:layout_height="2dp"
+                        android:background="@color/darkwhite"
+                        android:layout_weight="1"
+                        />
+
+                    <!--<android.support.v7.widget.CardView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="55dp"-->
+                    <!--android:layout_marginRight="16dp"-->
+                    <!--android:layout_marginLeft="16dp"-->
+                    <!--android:layout_marginTop="2dp"-->
+                    <!--android:layout_below="@+id/card_shipping_help"-->
+                    <!--android:id="@+id/card_myAccount_help">-->
+
+                    <!--<RelativeLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent">-->
+
+
+                    <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:id="@+id/tv_myAccount_help"-->
+                    <!--android:text="My Account and My Orders"-->
+                    <!--android:textColor="@color/black"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:layout_marginLeft="15dp"/>-->
+                    <!--<ImageButton-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:id="@+id/imgbtn_rightarraow_myAccount_help"-->
+                    <!--android:src="@drawable/ic_action_rightarrow"-->
+                    <!--android:background="@color/white"-->
+                    <!--android:layout_alignParentEnd="true"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:layout_marginRight="15dp"/>-->
+
+                    <!--</RelativeLayout>-->
+
+                    <!--</android.support.v7.widget.CardView>-->
+
+                    <!--<android.support.v7.widget.CardView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="55dp"-->
+                    <!--android:layout_marginRight="16dp"-->
+                    <!--android:layout_marginLeft="16dp"-->
+                    <!--android:layout_marginTop="2dp"-->
+                    <!--android:layout_below="@+id/card_shipping_help"-->
+                    <!--android:id="@+id/card_refund_help">-->
+
+                    <!--<RelativeLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent">-->
+
+
+                    <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:id="@+id/tv_refund_help"-->
+                    <!--android:text="My Account and My Orders"-->
+                    <!--android:textColor="@color/black"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:layout_marginLeft="15dp"/>-->
+                    <!--<ImageButton-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:id="@+id/imgbtn_rightarraow_refund_help"-->
+                    <!--android:src="@drawable/ic_action_rightarrow"-->
+                    <!--android:background="@color/white"-->
+                    <!--android:layout_alignParentEnd="true"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:layout_marginRight="15dp"/>-->
+
+                    <!--</RelativeLayout>-->
+
+                    <!--</android.support.v7.widget.CardView>-->
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/card_cancellations_help"
+                        android:layout_width="match_parent"
+                        app:cardElevation="0dp"
+                        android:layout_height="55dp"
+                        android:layout_below="@+id/card_shipping_help"
+                        android:layout_marginTop="2dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+
+                            <TextView
+                                android:id="@+id/tv_cancellations_help"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="15dp"
+                                android:text="Cancellations"
+                                android:textColor="@color/black" />
+
+                            <ImageButton
+                                android:id="@+id/imgbtn_rightarraow_cancellations_help"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="15dp"
+                                android:background="@color/white"
+                                android:src="@drawable/ic_action_rightarrow" />
+
+                        </RelativeLayout>
+
+                    </android.support.v7.widget.CardView>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_below="@id/card_cancellations_help"
+                        android:layout_height="2dp"
+                        android:background="@color/darkwhite"
+                        android:layout_weight="1"
+                        />
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/card_faq_help"
+                        android:layout_width="match_parent"
+                        app:cardElevation="0dp"
+                        android:layout_height="55dp"
+                        android:layout_below="@+id/card_cancellations_help"
+                        android:layout_marginTop="2dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+
+                            <TextView
+                                android:id="@+id/tv_faq_help"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="15dp"
+                                android:text="OTHER FAQs"
+                                android:textColor="@color/black" />
+
+                            <ImageButton
+                                android:id="@+id/imgbtn_rightarraow_faq_help"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="15dp"
+                                android:background="@color/white"
+                                android:src="@drawable/ic_action_rightarrow" />
+
+                        </RelativeLayout>
+
+                    </android.support.v7.widget.CardView>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_below="@id/card_faq_help"
+                        android:layout_height="2dp"
+                        android:background="@color/darkwhite"
+                        android:layout_weight="1"
+                        />
+
+                    <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                        android:id="@+id/expandableLayout_faq_help"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/card_faq_help">
+
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/card1_faq_help"
+                            android:layout_width="match_parent"
+                            app:cardElevation="0dp"
+                            android:layout_height="45dp"
+                            android:layout_marginTop="2dp">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/tv1_faq_help"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="25dp"
+                                    android:text="Reward Program" />
+
+                                <ImageButton
+                                    android:id="@+id/imgbtn1_faq_help"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginRight="16dp"
+                                    android:background="@color/white"
+                                    android:src="@drawable/ic_action_rightarrow" />
+
+                            </RelativeLayout>
+
+                        </android.support.v7.widget.CardView>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_below="@id/card1_faq_help"
+                            android:layout_height="2dp"
+                            android:background="@color/darkwhite"
+                            android:layout_weight="1"
+                            />
+
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/card2_faq_help"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            app:cardElevation="0dp"
+                            android:layout_below="@+id/card1_faq_help"
+                            android:layout_marginTop="2dp">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/tv2_faq_help"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="25dp"
+                                    android:text="Refer a friend" />
+
+                                <ImageButton
+                                    android:id="@+id/imgbtn2_faq_help"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginRight="16dp"
+                                    android:background="@color/white"
+                                    android:src="@drawable/ic_action_rightarrow" />
+
+                            </RelativeLayout>
+
+                        </android.support.v7.widget.CardView>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_below="@id/card2_faq_help"
+                            android:layout_height="2dp"
+
+                            android:background="@color/darkwhite"
+                            android:layout_weight="1"
+                            />
+
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/card3_faq_help"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            app:cardElevation="0dp"
+                            android:layout_below="@+id/card2_faq_help"
+                            android:layout_marginTop="2dp">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/tv3_faq_help"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="25dp"
+                                    android:text="Authenticity and Genuineness"
+                                    android:layout_centerVertical="true"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_marginStart="26dp" />
+
+                                <ImageButton
+                                    android:id="@+id/imgbtn3_faq_help"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginRight="16dp"
+                                    android:background="@color/white"
+                                    android:src="@drawable/ic_action_rightarrow" />
+
+                            </RelativeLayout>
+
+                        </android.support.v7.widget.CardView>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_below="@id/card3_faq_help"
+                            android:layout_height="2dp"
+                            android:background="@color/darkwhite"
+                            android:layout_weight="1"
+                            />
+
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/card4_faq_help"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            app:cardElevation="0dp"
+                            android:layout_below="@+id/card3_faq_help"
+                            android:layout_marginTop="2dp">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/tv4_faq_help"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="25dp"
+                                    android:text="Affilate program" />
+
+                                <ImageButton
+                                    android:id="@+id/imgbtn4_faq_help"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginRight="16dp"
+                                    android:background="@color/white"
+                                    android:src="@drawable/ic_action_rightarrow" />
+
+                            </RelativeLayout>
+
+                        </android.support.v7.widget.CardView>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_below="@id/card4_faq_help"
+                            android:layout_height="2dp"
+                            android:background="@color/darkwhite"
+                            android:layout_weight="1"
+                            />
+
+                    </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_below="@id/expandableLayout_faq_help"
+                        android:layout_height="2dp"
+                        android:background="@color/darkwhite"
+                        android:layout_weight="1"
+                        />
+
+                </RelativeLayout>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_email_help"
+                    android:layout_width="match_parent"
+                    app:cardElevation="0dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_height="55dp"
+                    android:visibility="gone"
+                    android:layout_below="@+id/expandableLayout_other_help"
+                    android:layout_marginBottom="16dp"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/img_email_help"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="25dp"
+                            android:src="@drawable/ic_action_email"
+                            android:textAlignment="center" />
+
+                        <TextView
+                            android:id="@+id/tv_email_help"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="5dp"
+                            android:text="Email us"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

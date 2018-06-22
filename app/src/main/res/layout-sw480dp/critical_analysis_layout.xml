@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/questions_background"
+    android:layout_height="match_parent">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        android:id="@+id/actionbar"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/tool"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/filter_blue"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Force And Pressure"
+                    android:id="@+id/tooltilte"
+                    android:textSize="15dp"
+                    android:layout_marginTop="18dp"
+                    android:textColor="@color/white"
+                    />
+
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/cart"
+                    android:layout_marginRight="50dp"
+                    android:layout_alignParentRight="true"
+                    android:tint="@color/white"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_chart"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/endbtn"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:padding="10dp"
+                    android:layout_alignParentRight="true"
+                    android:text="End"/>
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:id="@+id/stepper"
+        android:layout_below="@+id/actionbar"
+        android:layout_height="40dp">
+
+        <com.baoyachi.stepview.HorizontalStepView
+            android:id="@+id/step_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+    </LinearLayout>
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/stepper"
+        android:padding="30dp"
+        android:layout_marginBottom="50dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp"
+        app:cardUseCompatPadding="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_margin="20dp"
+                android:tint="@color/matteBlack"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_bulb"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:textSize="12dp"
+                android:id="@+id/ques"
+                android:textColor="@color/black"
+                android:layout_marginRight="30dp"
+                android:padding="10dp"
+
+                android:text="What is Gravitational Force?"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ques"
+                android:id="@+id/options"
+                android:layout_marginTop="5dp"
+                android:padding="10dp"
+                android:text="Options"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/opt1"
+                android:layout_margin="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_below="@id/options"
+                android:background="@drawable/rectangle"
+                android:padding="10dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="Universal force of attraction by which all physical bodies attract each other."/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/opt2"
+
+                android:layout_margin="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_below="@id/opt1"
+                android:background="@drawable/rectangle"
+                android:padding="10dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="Universal force of attraction by which all physical bodies attract each other."/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="10dp"
+                android:layout_marginTop="15dp"
+                android:id="@+id/opt3"
+                android:layout_below="@id/opt2"
+                android:background="@drawable/rectangle"
+                android:padding="10dp"
+                >
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Universal force of attraction by which all physical bodies attract each other."
+                    android:textColor="@color/black" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="10dp"
+                android:id="@+id/opt4"
+                android:layout_marginTop="15dp"
+                android:layout_below="@id/opt3"
+                android:background="@drawable/rectangle"
+                android:padding="10dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="Universal force of attraction by which all physical bodies attract each other."/>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+
+    </android.support.v7.widget.CardView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/blue"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/next1"
+            android:layout_width="190dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/ripple_effect"
+            android:text="NEXT"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize" />
+
+        <Button
+            android:id="@+id/skip1"
+            android:layout_width="190dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ripple_effect"
+
+            android:layout_alignParentRight="true"
+            android:text="SKIP"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

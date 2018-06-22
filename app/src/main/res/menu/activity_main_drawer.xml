@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/newfeatures">
+
+        <item
+            android:id="@+id/analysis"
+            android:icon="@drawable/nav_analysis"
+            android:title="Course Recommender"
+            android:titleCondensed="new"
+            />
+
+        <item
+            android:id="@+id/recommendations"
+            android:icon="@drawable/nav_recomm"
+            android:title="Advice For Students"
+            />
+        <item
+            android:id="@+id/activitybox"
+            android:icon="@drawable/ic_activity"
+            android:title="Compare Colleges"
+            android:visible="false"
+            />
+
+        <item android:title="Search Similar Profiles"
+            android:icon="@drawable/ic_publication"
+            android:id="@+id/publication"
+            android:visible="false"
+            />
+
+    </group>
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/misc">
+
+        <item android:title="University Shortlistings"
+            android:icon="@drawable/nav_playnwin"
+            android:id="@+id/shortlisting"
+            />
+        <item android:title="Apply for University"
+            android:icon="@drawable/ic_apply"
+            android:id="@+id/apply"
+            />
+        <item android:title="@string/apply"
+            android:icon="@drawable/ic_win_scholarships"
+            android:id="@+id/scholar"
+            />
+        <item android:title="Grad School Finder"
+            android:icon="@drawable/nav_play"
+            android:id="@+id/games"
+            />
+        <item android:title="@string/lor"
+            android:icon="@drawable/ic_resume"
+            android:id="@+id/resume"
+            />
+        <item android:title="Education Loan"
+            android:icon="@drawable/ic_education_loan"
+            android:id="@+id/loan"
+            />
+        <item android:title="Buy Forex"
+            android:icon="@drawable/ic_form"
+            android:id="@+id/forms"
+            />
+
+    </group>
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/newGroups">
+
+        <item android:title="Notifications"
+            android:icon="@drawable/ic_notificat"
+            android:id="@+id/notif"
+            />
+        <!--<item android:title="Stepper Activity"-->
+            <!--android:icon="@drawable/nav_offers"-->
+
+            <!--android:id="@+id/step"-->
+            <!--/>-->
+
+        <item android:title="My Application Status"
+            android:icon="@drawable/ic_status"
+            android:id="@+id/status"
+            />
+        <item android:title="My Bookings"
+            android:icon="@drawable/ic_my_booking"
+            android:id="@+id/booking"
+            />
+        <item android:title="My Wishlist"
+            android:icon="@drawable/ic_my_wishlist"
+            android:id="@+id/wishlist"
+            />
+        </group>
+    <group android:checkableBehavior="single"
+        android:id="@+id/owner">
+
+        <item android:title="Learn App Features"
+            android:icon="@drawable/ic_app_feature"
+            android:id="@+id/guide"
+            />
+        <item
+            android:id="@+id/register"
+            android:icon="@drawable/ic_register"
+            android:title="@string/baandcc" />
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/ic_invite_friends"
+            android:title="Invite Friends on Yantra" />
+
+        <item
+            android:id="@+id/follow"
+            android:icon="@drawable/ic_follow_fb"
+            android:title="Follow Us On Facebook" />
+        <item
+            android:id="@+id/nav_rate"
+            android:icon="@drawable/ic_rateus"
+            android:title="Rate Us On Playstore" />
+        <item
+            android:id="@+id/Feed"
+            android:icon="@drawable/ic_feedback"
+            android:title="Send Feedback" />
+        <item
+            android:id="@+id/about_us"
+            android:icon="@drawable/ic_abt_us"
+            android:title="About Us" />
+        <item
+            android:id="@+id/helpdesk"
+            android:icon="@drawable/helpdesk"
+            android:title="Help Desk" />
+        <item
+            android:id="@+id/privacy_policy"
+            android:icon="@drawable/privacypolicy"
+            android:title="Privacy Policy"
+            />
+
+    </group>
+</menu>
+
+

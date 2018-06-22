@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        app:theme="@style/xyz"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+
+          <ImageView
+              android:layout_width="220dp"
+              android:padding="5dp"
+              android:id="@+id/logo"
+              android:layout_height="100dp"
+              android:layout_marginTop="5dp"
+              android:paddingLeft="0dp"
+              android:layout_marginLeft="105dp"
+              android:src="@drawable/logo" />
+
+          <ImageView
+              android:id="@+id/phone"
+              android:layout_width="40dp"
+              android:layout_marginTop="11dp"
+              android:layout_toLeftOf="@+id/notif"
+              android:padding="5dp"
+              android:layout_marginRight="20dp"
+              android:layout_height="40dp"
+              android:src="@drawable/ic_helpdesk"
+              />
+          <ImageView
+              android:id="@+id/notif"
+              android:tint="@color/filter_blue"
+              android:layout_width="45dp"
+              android:layout_marginTop="11dp"
+              android:padding="5dp"
+              android:layout_alignParentRight="true"
+              android:layout_marginRight="40dp"
+              android:layout_height="45dp"
+              android:src="@drawable/nav_notif"
+              />
+
+      </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+</LinearLayout>

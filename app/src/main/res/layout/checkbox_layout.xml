@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/questions_background"
+    android:layout_height="match_parent">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        android:id="@+id/actionbar"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/tool"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/filter_blue"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Emotional Intelligence"
+                    android:id="@+id/tooltilte"
+                    android:textSize="15dp"
+                    android:layout_marginTop="23dp"
+                    android:textColor="@color/white"
+                    />
+
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/cart"
+                    android:layout_marginRight="50dp"
+                    android:layout_alignParentRight="true"
+                    android:tint="@color/white"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_profit"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/endbtn"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:padding="10dp"
+                    android:layout_alignParentRight="true"
+                    android:text="End"/>
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:id="@+id/stepper"
+        android:layout_below="@+id/actionbar"
+        android:layout_height="40dp">
+        <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+            android:id="@+id/progress_1"
+            android:layout_height="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_width="0dp"
+            android:layout_weight="90"
+
+            app:rcBackgroundPadding="2dp"
+            app:rcIconSize="50dp"
+            app:rcIconPadding="5dp" />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="10"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="7dp"
+            android:src="@drawable/flag"
+            android:padding="5dp"
+            />
+
+    </LinearLayout>
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/stepper"
+        android:padding="30dp"
+        android:layout_marginBottom="50dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp"
+        app:cardUseCompatPadding="true">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:background="@drawable/background"
+            android:layout_height="match_parent">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="20dp"
+                    android:src="@drawable/lightbulb"
+                    android:tint="@color/matteBlack" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/quest"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_alignTop="@+id/imageView8"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="45dp"
+                    android:layout_marginTop="38dp"
+                    android:layout_weight="15"
+                    android:background="@drawable/rectangle"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/quetxtview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:padding="10dp"
+                        android:text="Q9. Child maintains a sense of humor and maintains a smile of accomplishment."
+                        android:textAlignment="center"
+                        android:textColor="@color/darkblue"
+                        android:textSize="@dimen/textSize" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="60"
+                    android:orientation="vertical">
+
+                    <RadioGroup
+                        android:id="@+id/choices"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignStart="@+id/quest"
+                        android:layout_below="@+id/quest"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="20dp">
+
+                        <CheckBox
+                            android:id="@+id/checkBox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:text="Switch between task efficiently"
+                            android:textColor="@color/darkblue"
+                            android:textSize="@dimen/textSize" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:text="Remember locations or faces"
+                            android:textColor="@color/darkblue"
+                            android:textSize="@dimen/textSize" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:text="Make quick or accurate estimations"
+                            android:textColor="@color/darkblue"
+                            android:textSize="@dimen/textSize" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:text="Work efficiently under time pressure e.g. Exam"
+                            android:textColor="@color/darkblue"
+                            android:textSize="@dimen/textSize" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:text="Listen carefully before judging"
+                            android:textColor="@color/darkblue"
+                            android:textSize="@dimen/textSize" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:text="Does not get distracted by external factors"
+                            android:textColor="@color/darkblue"
+                            android:textSize="@dimen/textSize" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:text="Child loves to work in team"
+                            android:textColor="@color/darkblue"
+                            android:textSize="@dimen/textSize" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:text="Child like creating new things"
+                            android:textColor="@color/darkblue"
+                            android:textSize="@dimen/textSize" />
+                    </RadioGroup>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:id="@+id/opt1"-->
+            <!--android:layout_margin="10dp"-->
+            <!--android:layout_marginTop="15dp"-->
+            <!--android:layout_below="@id/options"-->
+            <!--android:background="@drawable/rectangle"-->
+            <!--android:padding="10dp"-->
+            <!--&gt;-->
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textColor="@color/black"-->
+            <!--android:text="Universal force of attraction by which all physical bodies attract each other."/>-->
+            <!--</LinearLayout>-->
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:id="@+id/opt2"-->
+
+            <!--android:layout_margin="10dp"-->
+            <!--android:layout_marginTop="15dp"-->
+            <!--android:layout_below="@id/opt1"-->
+            <!--android:background="@drawable/rectangle"-->
+            <!--android:padding="10dp"-->
+            <!--&gt;-->
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textColor="@color/black"-->
+            <!--android:text="Universal force of attraction by which all physical bodies attract each other."/>-->
+            <!--</LinearLayout>-->
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_margin="10dp"-->
+            <!--android:layout_marginTop="15dp"-->
+            <!--android:id="@+id/opt3"-->
+            <!--android:layout_below="@id/opt2"-->
+            <!--android:background="@drawable/rectangle"-->
+            <!--android:padding="10dp"-->
+            <!--&gt;-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/textView3"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Universal force of attraction by which all physical bodies attract each other."-->
+            <!--android:textColor="@color/black" />-->
+            <!--</LinearLayout>-->
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_margin="10dp"-->
+            <!--android:id="@+id/opt4"-->
+            <!--android:layout_marginTop="15dp"-->
+            <!--android:layout_below="@id/opt3"-->
+            <!--android:background="@drawable/rectangle"-->
+            <!--android:padding="10dp"-->
+            <!--&gt;-->
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textColor="@color/black"-->
+            <!--android:text="Universal force of attraction by which all physical bodies attract each other."/>-->
+            <!--</LinearLayout>-->
+
+
+        </RelativeLayout>
+        </ScrollView>
+
+
+    </android.support.v7.widget.CardView>
+    <include layout="@layout/bottom_buttons"></include>
+</RelativeLayout>

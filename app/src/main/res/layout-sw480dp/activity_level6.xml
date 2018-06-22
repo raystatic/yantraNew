@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:id="@+id/bb_level6"
+    tools:context="com.university.yantra.GameBrainBooster.Levels.Level6Activity">
+
+
+    <com.university.yantra.GameBrainBooster.CustomView
+        android:id="@+id/custom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:layout_marginTop="85dp"
+        android:textColor="#000"
+        android:text="Tap ELEPHANT"
+        android:onClick="Textclicked"/>
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="270dp"
+        android:text="e"
+        android:textSize="20sp"
+        android:onClick="Bclicked"
+        android:background="@drawable/brain_op_buttonanim"
+        android:layout_alignStart="@+id/textView2" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/button6"
+        android:layout_centerHorizontal="true"
+        android:text="p"
+        android:textSize="20sp"
+        android:onClick="Bclicked"
+        android:background="@drawable/brain_op_buttonanim"/>
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView2"
+        android:layout_alignTop="@+id/button7"
+        android:text="n"
+        android:textSize="20sp"
+        android:onClick="Bclicked"
+        android:background="@drawable/brain_op_buttonanim"/>
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:text="l"
+        android:textSize="20sp"
+        android:layout_below="@+id/button6"
+        android:layout_alignStart="@+id/button11"
+        android:onClick="Bclicked"
+        android:background="@drawable/brain_op_buttonanim"/>
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/button9"
+        android:layout_marginStart="35dp"
+        android:layout_toEndOf="@+id/button9"
+        android:text="a"
+        android:textSize="20sp"
+        android:onClick="Bclicked"
+        android:background="@drawable/brain_op_buttonanim"/>
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/button6"
+        android:layout_below="@+id/button9"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="20dp"
+        android:text="t"
+        android:textSize="20sp"
+        android:onClick="Bclicked"
+        android:background="@drawable/brain_op_buttonanim"/>
+
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/button7"
+        android:layout_alignTop="@+id/button11"
+        android:layout_marginStart="7dp"
+        android:text="h"
+        android:textSize="20sp"
+        android:onClick="Bclicked"
+        android:background="@drawable/brain_op_buttonanim"/>
+
+    <Button
+        android:id="@+id/button13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="e"
+        android:textSize="20sp"
+        android:layout_alignBaseline="@+id/button12"
+        android:layout_alignBottom="@+id/button12"
+        android:layout_alignStart="@+id/button8"
+        android:onClick="Bclicked"
+        android:background="@drawable/brain_op_buttonanim"/>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:visibility="invisible"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+
+    <Button
+        android:id="@+id/imageButton7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/brain_op_buttonanim"
+        android:onClick="onSkip"
+        android:text="skip >>"
+        android:layout_marginBottom="20dp"/>
+
+
+</RelativeLayout>
+

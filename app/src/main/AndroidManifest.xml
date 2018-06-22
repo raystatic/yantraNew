@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.university.yantra">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+
+    <application
+        android:name=".common.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Activities.MainActivity" />
+        <activity android:name=".Activities.DialogFlowResultActivity"/>
+        <activity
+            android:name=".Activities.SplashActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activities.AnalysisActivity" />
+        <activity android:name=".Activities.DialogFlow"/>
+        <activity
+            android:name=".Activities.LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Activities.NotificationActivity" />
+        <activity android:name=".Activities.SignUpActivity" />
+        <activity android:name=".Activities.IntroActivity" />
+        <activity android:name=".Activities.Recommendations" />
+
+        <service android:name=".Activities.FirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".Activities.FirebaseIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activities.AboutActivity" />
+        <activity android:name=".Activities.PrivacyActivity" />
+        <activity android:name=".HelpDesk.HelpDeskActivity" />
+        <activity android:name=".ViewMore.TrendingUniversitiesActivity" />
+        <activity android:name=".ViewMore.TrendingCoursesActivity" />
+        <activity android:name=".ViewMore.ShortTermCoursesActivity" />
+        <activity android:name=".ViewMore.AmbassdorsActivity" />
+        <activity android:name=".Activities.StepperActivity" />
+        <activity android:name=".GameBrainBooster.MainActivity" />
+        <activity android:name=".GameBrainBooster.GameBoosterOver" />
+        <activity android:name=".GameBrainBooster.GameOver" />
+        <activity android:name=".GameBrainBooster.EndActivity" />
+        <activity android:name=".GameBrainBooster.Levels.Level1Activity" />
+        <activity android:name=".GameBrainBooster.Levels.Level13Activity" />
+        <activity android:name=".GameBrainBooster.Levels.Level2Activity" />
+        <activity android:name=".GameBrainBooster.Levels.Level9Activity" />
+        <activity android:name=".GameBrainBooster.Levels.Level3Activity" />
+        <activity android:name=".GameBrainBooster.Levels.Level4Activity" />
+        <activity android:name=".GameBrainBooster.Levels.Level10Activity" />
+        <activity android:name=".GameBrainBooster.Levels.Level5Activity" />
+        <activity android:name=".GameBrainBooster.Levels.Level6Activity" />
+        <activity android:name=".GameBrainBooster.Levels.Level11Activity" />
+        <activity android:name=".GameBrainBooster.Levels.Level7Activity" />
+        <activity android:name=".GameBrainBooster.Levels.Level12Activity" />
+        <activity android:name=".GameBrainBooster.Levels.Level8Activity" />
+        <activity android:name=".Activities.WheelActivity" />
+        <activity android:name=".HelpDesk.AffilateActivity" />
+        <activity android:name=".HelpDesk.AuthencityActivity" />
+        <activity android:name=".HelpDesk.OrderPlacementActivity" />
+        <activity android:name=".HelpDesk.OrderCancellationActivity" />
+        <activity android:name=".HelpDesk.OrderFAQActivity" />
+        <activity android:name=".HelpDesk.OrderMyAccountActivity" />
+        <activity android:name=".HelpDesk.OrderPaymentsActivity" />
+        <activity android:name=".HelpDesk.OrderPlacementsActivity" />
+        <activity android:name=".HelpDesk.OrderPrivacyActivity" />
+        <activity android:name=".HelpDesk.OrderShippingActivity" />
+        <activity android:name=".HelpDesk.OrderTermsActivity" />
+        <activity android:name=".HelpDesk.ReferAFriend" />
+        <activity android:name=".HelpDesk.RefundsActivity" />
+        <activity android:name=".HelpDesk.RewardProgram" />
+        <activity android:name=".Activities.AptitudeActivity" />
+        <activity android:name=".Activities.FiltersActivity" />
+        <activity android:name=".Activities.WishlistActivity" />
+        <activity android:name=".Activities.ForgotPasswordActivity" />
+        <activity android:name=".Activities.PaymentsActivity" />
+        <activity android:name=".Activities.PreferencesActivity" />
+        <activity android:name=".Activities.VideosActivity" />
+        <activity android:name=".Activities.SearchActivity" />
+        <activity android:name=".Activities.LoanActivity" />
+        <activity android:name=".Activities.ForexActivity"></activity>
+    </application>
+
+</manifest>

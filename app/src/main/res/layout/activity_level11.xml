@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:id="@+id/puzzle3"
+    tools:context="com.university.yantra.GameBrainBooster.Levels.Level11Activity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:layout_marginTop="85dp"
+        android:textColor="#000"
+        android:text="How much tons of soil is present in a 2 meters deep and 2 meters wide hole in the ground?" />
+
+    <com.university.yantra.GameBrainBooster.CustomView
+        android:id="@+id/custom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/bulldozer"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp" />
+
+    <Button
+        android:id="@+id/button20"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_below="@+id/imageView13"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="30dp"
+        android:text="0"
+        android:textSize="20sp"
+        android:background="@drawable/brain_op_buttonanim"/>
+
+    <Button
+        android:id="@+id/button21"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView2"
+        android:layout_alignTop="@+id/button20"
+        android:layout_marginEnd="32dp"
+        android:text="2"
+        android:textSize="20sp"
+        android:background="@drawable/brain_op_buttonanim"/>
+
+    <Button
+        android:id="@+id/button22"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_below="@+id/button21"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:text="4"
+        android:textSize="20sp"
+        android:background="@drawable/brain_op_buttonanim"/>
+
+    <Button
+        android:id="@+id/button23"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView2"
+        android:layout_alignTop="@+id/button22"
+        android:layout_marginEnd="32dp"
+        android:text="8"
+        android:textSize="20sp"
+        android:background="@drawable/brain_op_buttonanim"/>
+
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerVertical="true"
+        android:visibility="invisible"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/imageButton7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/brain_op_buttonanim"
+        android:onClick="onSkip"
+        android:text="SKIP >>"
+        android:layout_marginBottom="20dp"/>
+
+
+
+
+</RelativeLayout>

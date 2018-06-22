@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/univ"
+        android:title="Universities"
+        />
+
+    <item android:id="@+id/course"
+        android:title="Courses" />
+
+    <item android:id="@+id/short_term"
+        android:title="Short Term Courses" />
+    <item
+        android:id="@+id/ambassdors"
+        android:title="Ambassdors"/>
+
+</menu>
+

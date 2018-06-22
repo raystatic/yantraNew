@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    xmlns:android="http://schemas.android.com/apk/res/android" />
+<LinearLayout xmlns:tools2="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools2:ignore="MissingPrefix"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentStart="true">
+
+    <include layout="@layout/progress_bar"
+        android:id="@+id/progress_bar"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="30dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginBottom="30dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_p1"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@drawable/rectangle">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blue"
+            android:layout_gravity="center"
+            android:id="@+id/quetxtview"
+            android:gravity="center"
+            android:textSize="@dimen/textSize"
+            android:textAlignment="textStart"
+            android:text="@string/quest1"
+            fontPath="fonts/Montserrat-Regular.ttf"
+             />
+
+
+
+    </LinearLayout>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:id="@+id/choices"
+
+            android:layout_marginLeft="20dp">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sd"
+                android:text="Strongly Disagree"
+                fontPath="fonts/Montserrat-Regular.ttf"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/textSize"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Disagree"
+                android:id="@+id/d"
+                fontPath="fonts/Montserrat-Regular.ttf"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/textSize"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/naod"
+                android:text="Neither Agree Or Disagree"
+                fontPath="fonts/Montserrat-Regular.ttf"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/textSize"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Agree"
+                android:id="@+id/a"
+                fontPath="fonts/Montserrat-Regular.ttf"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/textSize"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Strongly Agree"
+                android:id="@+id/sa"
+                fontPath="fonts/Montserrat-Regular.ttf"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/textSize"
+
+                />
+        </RadioGroup>
+
+
+        </LinearLayout>
+</LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/blue"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/next1"
+            android:layout_width="190dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/ripple_effect"
+            android:text="NEXT"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize" />
+
+        <Button
+            android:id="@+id/skip1"
+            android:layout_width="190dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ripple_effect"
+
+            android:layout_alignParentRight="true"
+            android:text="SKIP"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize" />
+
+    </RelativeLayout>
+
+    </RelativeLayout>

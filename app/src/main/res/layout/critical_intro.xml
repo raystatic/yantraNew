@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:ignore="MissingPrefix"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:backgroundTintMode="screen">
+
+    <com.kofigyan.stateprogressbar.StateProgressBar
+        android:id="@+id/your_state_progress_bar_id"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content"
+        app:spb_stateSize="25dp"
+        app:spb_currentStateNumber="three"
+        app:spb_maxStateNumber="five"
+        app:spb_stateBackgroundColor="@color/white"
+        app:spb_stateForegroundColor="@color/darkOrange"
+        app:spb_stateNumberBackgroundColor="@color/coral"
+        app:spb_stateNumberForegroundColor="#eeeeee"
+        app:spb_currentStateDescriptionColor="@color/coral"
+        app:spb_stateDescriptionColor="@color/white"
+        app:spb_animateToCurrentProgressState="true"
+        app:spb_checkStateCompleted="true"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:scaleType="centerCrop"
+        android:layout_height="200dp"
+        android:layout_marginTop="18dp"
+        android:id="@+id/game_image"
+        android:src="@drawable/profile"
+        android:layout_below="@+id/your_state_progress_bar_id"
+        android:layout_alignParentStart="true" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quick Maths"
+        android:textAllCaps="true"
+        android:textAlignment="center"
+        android:id="@+id/game_name"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:textSize="40dp"
+        android:layout_marginBottom="15dp"
+        android:textColor="@color/game4"
+        android:layout_centerInParent="true"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="13dp"
+        android:orientation="vertical"
+        android:id="@+id/instructions"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/rectangleintro"
+        android:layout_below="@id/game_name">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/ic_instructions"
+            android:id="@+id/instr"
+            android:layout_centerHorizontal="true"
+            android:foregroundGravity="center_horizontal"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/game4_instruction"
+            android:id="@+id/game_instructions"
+            android:textColor="@color/game4"
+            android:fontFamily="sans-serif"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+
+            android:textSize="@dimen/textSize"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="30dp"
+      android:layout_below="@+id/instructions">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/exit"
+            android:layout_marginRight="60dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:id="@+id/skip"
+                android:src="@drawable/ic_skip_game"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Skip"
+                android:fontFamily="sans-serif"
+                android:id="@+id/text_skip"
+                android:textSize="@dimen/textSize"
+                android:textColor="@color/game4"/>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/play"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_start"
+                android:id="@+id/start_p"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="Start"
+                android:id="@+id/text_start"
+                android:textSize="@dimen/textSize"
+                android:textColor="@color/game4"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/home/rahul/.gradle/caches/modules-2/files-2.1/ai.api/libai/1.4.8/1386bf51c371e40bf1dc04920b04bd937c04e8ba/libai-1.4.8.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="1386bf51c371e40bf1dc04920b04bd937c04e8ba">
+        <dex dex="/home/rahul/yantraAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/libai-1.4.8_d3f268980c1aac49b1ea7788351301094aec398c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/rahul/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.2/d7ef6ad7ff0711dd12fe409d62d72d6ed14516e0/log4j-api-2.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="d7ef6ad7ff0711dd12fe409d62d72d6ed14516e0">
+        <dex dex="/home/rahul/yantraAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/log4j-api-2.2_3d8011f5077f2f020b5b0fbc12e618c112e44651/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/rahul/yantraAndroid/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="20094709338bdb34b784c80e534e4e33952e8246">
+        <dex dex="/home/rahul/yantraAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_20935f0d9f6b696808008b28c4dfd1bc08e40626/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/rahul/.android/build-cache/07f24bccf2fc4abf92807a0e65ad714fe19d7b56/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="eff74f6c0ec5db858ddb943293604c0845217c76">
+        <dex dex="/home/rahul/yantraAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_a502dc3c404cbd8a764146faa049af52504808da/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/rahul/yantraAndroid/app/libs/YouTubeAndroidPlayerApi.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="3c4f96ff493456651cc7bdb0b47e10eb25545a16">
+        <dex dex="/home/rahul/yantraAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/2/YouTubeAndroidPlayerApi_c08e9c915c4bb88afe6b993746a737efe7bea777/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/rahul/yantraAndroid/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="/home/rahul/yantraAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_d9d2484aa2491a8814800fbc42923055cd8b24f6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/usr/local/android-studio/gradle/m2repository/commons-io/commons-io/2.4/commons-io-2.4.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="b1b6ea3b7e4aa4f492509a4952029cd8e48019ad">
+        <dex dex="/home/rahul/yantraAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/commons-io-2.4_fdce6042c36c2a3f4b93daf8167562e8e898e2c6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/rahul/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-core/2.2/c707664e020218f8529b9a5e55016ee15f0f82ac/log4j-core-2.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="c707664e020218f8529b9a5e55016ee15f0f82ac">
+        <dex dex="/home/rahul/yantraAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/log4j-core-2.2_dcc9707135b5acb91748fb40be465dc20da95ec4/classes.dex" />
+    </item>
+
+</items>

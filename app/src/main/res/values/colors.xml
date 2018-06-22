@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="example_color">#7B1FA2</color>
+    <color name="example_color1">#E91E63</color>
+    <color name="example_color2">#7E57C2</color>
+    <color name="matcolor">#7E57C2</color>
+    <color name="gold">#FDD835</color>
+    <color name="purple">#751975</color>
+    <color name="custom_progress_red_header">#ffcc0000</color>
+    <color name="custom_progress_red_progress">#ffff4444</color>
+    <color name="background_dark">#ff363636</color>
+    <color name="custom_progress_background">#ff3c3a3b</color>
+    <color name="light_purple">#CEAECE</color>
+    <color name="lightgrey">#c4bfbf</color>
+    <color name="lightback">#e6e4e4</color>
+    <color name="accent">#03A9F4</color>
+    <color name="pink">#FF69B4</color>
+    <color name="aliceblue">#F0F8FF</color>
+    <color name="bluetxt">#303F9F</color>
+    <color name="game4">#3083c9</color>
+    <color name="game1">#70bf25</color>
+
+    <color name="game5_yes">#3AA2C0</color>
+    <color name="game5_no">#f5E045</color>
+    <color name="hello">#0EEBAB</color>
+    <color name="game3">#9360bf</color>
+    <color name="game2">#e93939</color>
+    <color name="game5">#af5c46</color>
+    <color name="game6">#2bd060</color>
+    <color name="game7">#af4393</color>
+    <color name="game9">#85aed6</color>
+    <color name="MyRed">#da3b3b</color>
+    <array name="tab_colors">
+        <item name="tab_1">@color/white</item>
+        <item name="tab_2">@color/white</item>
+        <item name="tab_3">@color/white</item>
+        <item name="tab_4">@color/white</item>
+        <item name="tab_5">@color/white</item>
+    </array>
+    <!-- dots inactive colors -->
+    <color name="dot_dark_screen1">#d1395c</color>
+    <color name="dot_dark_screen2">#14a895</color>
+    <color name="dot_dark_screen3">#2278d4</color>
+    <color name="dot_dark_screen4">#d1395c</color>
+    <color name="dot_dark_screen5">#d1395c</color>
+
+
+    <!-- dots active colors -->
+    <color name="dot_light_screen1">#94e5fc</color>
+    <color name="dot_light_screen2">#8cf9eb</color>
+    <color name="dot_light_screen3">#93c6fd</color>
+    <color name="dot_light_screen4">#93c6fd</color>
+    <color name="dot_light_screen5">#93c6fd</color>
+    <color name="red">#FF0000</color>
+    <color name="blue">#0000FF</color>
+    <color name="green">#008000</color>
+    <color name="orange">#ffa500</color>
+    <array name="array_dot_active">
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen2</item>
+        <item>@color/dot_light_screen3</item>
+        <item>@color/dot_light_screen4</item>
+        <item>@color/dot_light_screen4</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen2</item>
+        <item>@color/dot_dark_screen3</item>
+        <item>@color/dot_dark_screen4</item>
+        <item>@color/dot_dark_screen5</item>
+
+    </array>
+    <color name="black_transparent">#0000ffff</color>
+    <color name="filter_blue">#4286f4</color>
+    <color name="color_tab_1">#FDD835</color>
+    <color name="color_tab_2">#303F9F</color>
+    <color name="color_tab_3">#47bc64</color>
+    <color name="black">#000</color>
+    <color name="drawerArrowColor">#000</color>
+    <color name="white">#ffffff</color>
+    <color name="darkblue">#303F9F</color>
+    <color name="dullwhite">#C9C9C9</color>
+    <color name="matteBlack">#37373D</color>
+    <color name="mettalic_grey">#999999</color>
+    <color name="dark_purple">#751975</color>
+    <!--<color name="darkMatteBlack">#242428</color>-->
+    <color name="darkMatteBlack">#0A0A0A</color>
+
+    <color name="lightpink">#ff1a75</color>
+    <color name="grey">#DDDDDD</color>
+    <color name="light_grey">#EEEEEE</color>
+    <color name="matteBlack50Down">#804F4F58</color>
+    <color name="fabColor">#ffff9900</color>
+    <color name="vlpCardViewColor">#FDD835</color>
+    <color name="darkOrange">#4286f4</color>
+    <color name="dorange">#FF4500</color>
+    <color name="ligorange">#ffd395</color>
+    <color name="coral">#FF7F50</color>
+    <color name="viewPagerColor">#FDD835</color>
+    <color name="olive">#003319</color>
+    <color name="viewPagerBgColor">#FDD835</color>
+
+
+
+    <!--<color name="color_lounges">#9911A816</color>
+    <color name="color_bars">#993D0892</color>
+    <color name="color_cafes">#99FE2F55</color>
+    <color name="color_clubs">#9923203A</color>
+--><color name="white_transparent">#99ffffff</color>
+
+
+
+    <color name="color_lounges">#69000000</color>
+    <color name="color_bars">#CC000000</color>
+    <color name="color_cafes">#CC000000</color>
+    <color name="color_clubs">#CC000000</color>
+
+    <color name="nightout_base1">#ab1ef4</color>
+
+    <color name="splash_statusBarColor">#1e0630</color>
+
+    <color name="ratingTextBgColor">#AB1EF4</color>
+
+    <color name="nightlifePageButtonColor">#242428</color>
+
+    <color name="intro_1">#a427f4</color>
+    <color name="intro_2">#47bc64</color>
+    <color name="intro_3">#2fb1fd</color>
+    <color name="light_black">#a9a9a9</color>
+    <color name="darkwhite">#f5f5f0</color>
+</resources>

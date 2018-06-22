@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    xmlns:toggle="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tools"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/dark_purple"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <FrameLayout
+        android:id="@+id/My_Container_1_ID"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/toggle"
+        android:layout_below="@id/tools"
+        >
+    </FrameLayout>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:id="@+id/toggle"
+    android:layout_alignParentBottom="true"
+    android:layout_marginBottom="0dp"
+    android:background="@color/filter_blue"
+    android:gravity="center_vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="wrap_content">
+ <Switch
+
+     android:layout_centerHorizontal="true"
+     android:gravity="center_horizontal"
+     android:id="@+id/switchButton"
+     android:foregroundGravity="bottom"
+     android:layout_width="wrap_content"
+     android:layout_alignParentBottom="true"
+     android:layout_height="@dimen/textSize" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="General"
+        android:textColor="@color/white"
+        android:id="@+id/text1"
+        android:paddingRight="10dp"
+        android:layout_marginLeft="55dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom"
+        android:layout_centerVertical="true"
+        android:textSize="@dimen/textSize"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Personalized"
+        android:id="@+id/text2"
+        android:textColor="@color/white"
+        android:layout_toRightOf="@id/switchButton"
+        android:paddingLeft="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom"
+        android:textSize="@dimen/textSize"/>
+    </RelativeLayout>
+</RelativeLayout>
+</RelativeLayout>

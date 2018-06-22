@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/questions_background"
+    android:layout_height="match_parent">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        android:id="@+id/actionbar"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/tool"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/darkOrange"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Critical Reasoning"
+                    android:id="@+id/tooltilte"
+                    android:textSize="15dp"
+                    android:layout_marginTop="23dp"
+                    android:textColor="@color/white"
+                    />
+
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/cart"
+                    android:layout_marginRight="50dp"
+                    android:layout_alignParentRight="true"
+                    android:tint="@color/white"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_profit"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/endbtn"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:padding="10dp"
+                    android:layout_alignParentRight="true"
+                    android:text="End"/>
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:id="@+id/stepper"
+        android:layout_below="@+id/actionbar"
+        android:layout_height="40dp">
+        <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+            android:id="@+id/progress_1"
+            android:layout_height="15dp"
+            android:layout_weight="90"
+            android:layout_marginTop="15dp"
+            android:layout_width="0dp"
+
+            app:rcBackgroundPadding="2dp"
+            app:rcIconSize="50dp"
+            app:rcIconPadding="5dp" />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="10"
+            android:layout_marginTop="7dp"
+            android:src="@drawable/flag"
+            android:padding="5dp"
+            />
+
+    </LinearLayout>
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/stepper"
+        android:padding="30dp"
+        android:layout_marginBottom="50dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/background"
+                android:scaleType="centerInside"/>
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_margin="20dp"
+                android:tint="@color/darkblue"
+                android:layout_height="30dp"
+                android:src="@drawable/lightbulb"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="15"
+                    android:orientation="vertical"
+                    android:layout_height="0dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:id="@+id/quetxtview"
+                android:textSize="@dimen/textSize"
+                android:textColor="@color/darkblue"
+                android:layout_marginRight="30dp"
+                android:padding="10dp"
+
+                android:text="What is Gravitational Force?"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/quetxtview"
+                android:id="@+id/options"
+                android:textColor="@color/darkblue"
+                android:layout_marginTop="0dp"
+                android:padding="10dp"
+                android:text="OPTIONS"/>
+                </LinearLayout>
+            <!--<RadioGroup-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@id/options"-->
+            <!--android:layout_marginTop="50dp"-->
+            <!--android:id="@+id/choices"-->
+
+            <!--android:layout_marginLeft="20dp">-->
+
+            <!--<RadioButton-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/sd"-->
+            <!--android:text="Strongly Disagree"-->
+            <!--fontPath="fonts/Montserrat-Regular.ttf"-->
+            <!--android:textColor="@color/blue"-->
+            <!--android:textSize="@dimen/textSize"-->
+            <!--/>-->
+            <!--<RadioButton-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Disagree"-->
+            <!--android:id="@+id/d"-->
+            <!--fontPath="fonts/Montserrat-Regular.ttf"-->
+            <!--android:textColor="@color/blue"-->
+            <!--android:textSize="@dimen/textSize"-->
+            <!--/>-->
+            <!--<RadioButton-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/naod"-->
+            <!--android:text="Neither Agree Or Disagree"-->
+            <!--fontPath="fonts/Montserrat-Regular.ttf"-->
+            <!--android:textColor="@color/blue"-->
+            <!--android:textSize="@dimen/textSize"-->
+            <!--/>-->
+            <!--<RadioButton-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Agree"-->
+            <!--android:id="@+id/a"-->
+            <!--fontPath="fonts/Montserrat-Regular.ttf"-->
+            <!--android:textColor="@color/blue"-->
+            <!--android:textSize="@dimen/textSize"-->
+            <!--/>-->
+            <!--<RadioButton-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Strongly Agree"-->
+            <!--android:id="@+id/sa"-->
+            <!--fontPath="fonts/Montserrat-Regular.ttf"-->
+            <!--android:textColor="@color/blue"-->
+            <!--android:textSize="@dimen/textSize"-->
+
+            <!--/>-->
+            <!--</RadioGroup>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="70"
+                android:layout_height="0dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="25"
+                android:orientation="horizontal"
+                android:id="@+id/opt1"
+                android:layout_margin="10dp"
+                android:layout_marginTop="0dp"
+                android:layout_below="@id/options"
+                android:background="@drawable/rectangle"
+                android:padding="10dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/darkblue"
+                    android:layout_gravity="center_vertical"
+                    android:text="A"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="@dimen/textSize"
+                    android:textColor="@color/darkblue"
+                    android:text="Universal force of attraction by which all physical bodies attract each other."/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="25"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:id="@+id/opt2"
+
+                android:layout_margin="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_below="@id/opt1"
+                android:background="@drawable/rectangle"
+                android:padding="10dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/darkblue"
+                    android:text="B"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_weight="25"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textSize"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/darkblue"
+                    android:layout_marginLeft="10dp"
+                    android:text="Universal force of attraction by which all physical bodies attract each other."/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:layout_weight="25"
+                android:layout_margin="10dp"
+                android:layout_marginTop="15dp"
+                android:id="@+id/opt3"
+                android:layout_below="@id/opt2"
+                android:background="@drawable/rectangle"
+                android:padding="10dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/darkblue"
+                    android:text="C"/>
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:textSize="@dimen/textSize"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Universal force of attraction by which all physical bodies attract each other."
+                    android:textColor="@color/darkblue"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:layout_margin="10dp"
+                android:layout_weight="25"
+                android:id="@+id/opt4"
+                android:layout_marginTop="15dp"
+                android:layout_below="@id/opt3"
+                android:background="@drawable/rectangle"
+                android:padding="10dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="D"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/darkblue" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="@dimen/textSize"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/darkblue"
+                    android:text="Universal force of attraction by which all physical bodies attract each other."/>
+            </LinearLayout>
+            </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+
+
+    </android.support.v7.widget.CardView>
+    <include layout="@layout/bottom_buttons"></include>
+
+</RelativeLayout>

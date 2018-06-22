@@ -1,0 +1,1118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
+    android:background="@color/white"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:backgroundTint="@android:color/white"
+            android:focusable="true"
+
+            android:layout_marginBottom="2dp"
+            android:clickable="true"
+            custom:cardCornerRadius="0dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:id="@+id/cardview1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:padding="20dp"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/report_image"
+
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/complete"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/report_image"
+                    android:id="@+id/linear"
+                    android:layout_centerHorizontal="true">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/anylsisreport"
+                        android:textStyle="bold"
+                        android:text="Sample Analysis Report"
+                        android:textColor="@color/filter_blue"
+                        android:textSize="20dp"/>
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:id="@+id/guide2"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/ic_guide"/>
+
+                </LinearLayout>
+
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:backgroundTint="@android:color/white"
+            android:focusable="true"
+            android:layout_below="@id/cardview1"
+            android:clickable="true"
+            android:layout_marginBottom="2dp"
+            custom:cardCornerRadius="0dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:id="@+id/cardview2">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="20dp">
+
+
+                <LinearLayout
+                    android:id="@+id/graph"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.github.mikephil.charting.charts.PieChart
+                        android:id="@+id/chart1"
+                        android:layout_marginLeft="0dp"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp" />
+
+                    <LinearLayout
+                        android:id="@+id/name"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Brain Bias reading for: "
+                            android:textColor="@color/filter_blue"
+                            android:textSize="@dimen/textSize"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Name"
+                            android:id="@+id/childName"
+                            android:textColor="@color/black"
+                            android:textAllCaps="true"
+                            android:textSize="@dimen/textSize"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:id="@+id/brainText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/graph"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <RelativeLayout
+                        android:id="@+id/brain1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/rectangle_purple"
+
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:text="LEFT BRAIN BIAS"
+                            android:textColor="@color/purple"
+                            android:textSize="@dimen/textSize2"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/brain2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/rectangle_purple"
+
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_centerHorizontal="true"
+                            android:text="RIGHT BRAIN BIAS"
+                            android:textColor="@color/purple"
+                            android:textSize="@dimen/textSize2"
+                            android:textStyle="bold"
+                            android:id="@+id/textView14" />
+
+                        <TextView
+                            android:id="@+id/textView15"
+                            android:layout_width="wrap_content"
+
+                            android:layout_height="wrap_content"
+                            android:layout_alignEnd="@+id/textView14"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="60dp"
+                            android:text="Random, Intuitive, Holistic, Synthesize, Subjective, Emotional, Looks at wholes, Symobols and images, Can get meaning and present possibilities"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/textSize2" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/characterstics"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/brainText"
+                    android:background="@drawable/rectangle_purple"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="CHARACTERSTICS"
+                        android:textColor="@color/purple"
+                        android:textSize="@dimen/textSize2"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/charText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/characterstics"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <RelativeLayout
+                        android:id="@+id/characterstics1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/rectangle_purple"
+
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:text="Logical, Sequencial, Highly Analytic, Rationale, Objective, Factual, Looks at parts, Word and language, Can comprehend, Form practical strategies "
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/textSize2" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/characterstics2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/characterstics"
+                        android:layout_weight="1"
+                        android:background="@drawable/rectangle_purple"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:text="Random, Intuitive, Holistic, Synthesizes,
+Subjective, Emotional, Looks at wholes,
+symbols and images, Can get meaning and
+present possibilities "
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/textSize2" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:backgroundTint="@android:color/white"
+            android:focusable="true"
+            android:layout_below="@id/cardview2"
+            android:clickable="true"
+            android:layout_marginBottom="2dp"
+            custom:cardCornerRadius="0dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:id="@+id/cardview3">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:padding="20dp"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/graph2"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                    <com.github.mikephil.charting.charts.PieChart
+                        android:id="@+id/chart2"
+                        android:layout_marginLeft="-20dp"
+                        android:layout_width="250dp"
+                        android:layout_height="250dp"
+                        android:visibility="gone"/>
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:id="@+id/name2"
+                        android:orientation="vertical"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:layout_marginBottom="10dp"
+                        android:layout_height="wrap_content">
+
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Smart Branding Quotient for:  "
+                            android:textColor="@color/filter_blue"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/textSize"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Name"
+                                android:textStyle="bold"
+                                android:id="@+id/name_child"
+                                android:textAllCaps="true"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/textSize"/>
+
+                            <ImageView
+                                android:layout_width="16dp"
+                                android:layout_height="16dp"
+                                android:id="@+id/guide"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="10dp"
+                                android:src="@drawable/ic_guide"/>
+                        </LinearLayout>
+
+
+
+                        <com.github.mikephil.charting.charts.RadarChart
+                            android:id="@+id/radarChart"
+                            android:layout_marginLeft="0dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="350dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/interpretation"
+                    android:padding="10dp"
+                    android:layout_below="@+id/graph2"
+                    android:background="@drawable/rectangle_purple">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="INTERPRETATION OF ABOVE CHART"
+                        android:layout_centerHorizontal="true"
+                        android:textStyle="bold"
+                        android:textColor="@color/purple"
+                        android:textSize="@dimen/textSize2"/>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/interpretationText"
+                    android:padding="10dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/rectangle_purple"
+                    android:layout_below="@id/interpretation">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="- Pie portion with highest percentage shows the most dominant areas of intelligence."
+                        android:layout_centerHorizontal="true"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textSize2"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="- Pie portion with least percentage indicate scope of improvement areas of intelligence."
+                        android:layout_centerHorizontal="true"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textSize2"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="- The factors which have similar percentage, are considered to be of equal potential."
+                        android:layout_centerHorizontal="true"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textSize2"/>
+
+                </LinearLayout>
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:backgroundTint="@android:color/white"
+            android:focusable="true"
+            android:layout_below="@id/cardview3"
+            android:clickable="true"
+            android:layout_marginBottom="2dp"
+            custom:cardCornerRadius="0dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:id="@+id/cardview4">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:padding="20dp"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/name3"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Here is split of factors involved in Smart Branding Quotient:"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/textSize2"/>
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:id="@+id/intelligence_box"
+                    android:layout_below="@id/name3"
+                    android:background="@drawable/rectangle_purple">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:id="@+id/intelligence">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginRight="10dp"
+                            android:id="@+id/imag1"
+                            android:src="@drawable/ic_intelligence"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/fabColor"
+                            android:text="INTELLIGENCE FACTOR"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/intelligence"
+                        android:id="@+id/intelligenceText">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="This factor corresponds to Intelligence Quotient which is designed to assess human intelligence in terms of Problem-Solving, Speed, accuracy, observation power, memorization, concentration etc."
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/textSize2"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/intelligenceText"
+                        android:id="@+id/intelligenceBar">
+
+                        <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+                            android:layout_width="210dp"
+                            android:layout_height="20dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/intelli"
+                            app:rcBackgroundColor="@color/custom_progress_background"
+                            app:rcBackgroundPadding="2dp"
+                            app:rcMax="400"
+                            app:rcProgress="200"
+                            app:rcProgressColor="@color/fabColor"
+                            app:rcRadius="20dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="200"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/intelligenceScore"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/textSize2"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="/400"
+                            android:layout_marginTop="10dp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/textSize2"/>
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:id="@+id/emotionalBox"
+                    android:layout_below="@id/intelligence_box"
+                    android:background="@drawable/rectangle_purple">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:id="@+id/emotional">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginRight="10dp"
+                            android:id="@+id/imag2"
+                            android:src="@drawable/ic_emotional"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/accent"
+                            android:text="EMOTIONAL FACTOR"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/emotional"
+                        android:id="@+id/emotionalText">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="This factor corresponds to the capability of individuals to recognize their own and other people's emotions, discern between different feelings and label them appropriately, use emotional information to guide thinking and behavior"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/textSize2"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/emotionalText"
+                        android:id="@+id/emotionalBar">
+
+                        <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+                            android:layout_width="210dp"
+                            android:layout_height="20dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/emo"
+                            app:rcBackgroundColor="@color/custom_progress_background"
+                            app:rcBackgroundPadding="2dp"
+                            app:rcMax="400"
+                            app:rcProgress="350"
+                            app:rcProgressColor="@color/accent"
+                            app:rcRadius="20dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="350"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/emotionalScore"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/textSize2"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="/400"
+                            android:layout_marginTop="10dp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/textSize2"/>
+                    </LinearLayout>
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:id="@+id/socialBox"
+                    android:layout_below="@+id/emotionalBox"
+                    android:background="@drawable/rectangle_purple">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:id="@+id/social">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginRight="10dp"
+                            android:id="@+id/imag3"
+                            android:src="@drawable/ic_social"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/green"
+                            android:text="SOCIAL FACTOR"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/social"
+                        android:id="@+id/socialText">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="This factor corresponds to the capability to effectively navigate and negotiate complex interpersonal and intrapersonal relationships and environments."
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/textSize2"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/socialText"
+                        android:id="@+id/socialBar">
+
+                        <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+                            android:layout_width="210dp"
+                            android:layout_height="20dp"
+                            android:layout_marginBottom="10dp"
+                            android:id="@+id/socials"
+                            android:layout_marginTop="10dp"
+                            app:rcBackgroundColor="@color/custom_progress_background"
+                            app:rcBackgroundPadding="2dp"
+                            app:rcMax="400"
+                            app:rcProgress="250"
+                            app:rcProgressColor="@color/green"
+                            app:rcRadius="20dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="250"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/socialScore"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/textSize2"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="/400"
+                            android:layout_marginTop="10dp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/textSize2"/>
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:id="@+id/verbalBox"
+                    android:layout_below="@+id/socialBox"
+                    android:background="@drawable/rectangle_purple">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:id="@+id/verbal">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginRight="10dp"
+                            android:id="@+id/imag4"
+                            android:src="@drawable/ic_social"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorAccent"
+                            android:text="VERBAL ABILITY FACTOR"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/verbal"
+                        android:id="@+id/verbalText">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="This factor corresponds to the ability to analyze information and solve problems using language-based reasoning. Language-based reasoning may involve reading or listening to words, conversing, writing, or even thinking. "
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/textSize2"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/verbalText"
+                        android:id="@+id/verbalBar">
+
+                        <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+                            android:layout_width="200dp"
+                            android:layout_height="20dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="10dp"
+                            app:rcBackgroundColor="@color/custom_progress_background"
+                            app:rcBackgroundPadding="2dp"
+                            android:id="@+id/verba"
+                            app:rcMax="400"
+                            app:rcProgress="200"
+                            app:rcProgressColor="@color/colorAccent"
+                            app:rcRadius="20dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="200"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/verbalScore"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/textSize2"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="/400"
+                            android:layout_marginTop="10dp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/textSize2"/>
+                    </LinearLayout>
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:id="@+id/creativeBox"
+                    android:layout_below="@+id/verbalBox"
+                    android:background="@drawable/rectangle_purple">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:id="@+id/creative">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:id="@+id/imag5"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/ic_creativity"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/red"
+                            android:text="CREATIVITY FACTOR"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/creative"
+                        android:id="@+id/creativityText">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="This factor corresponds to the ability to come up with new ideas through a mental process of connecting existing concepts.  "
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/textSize2"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/creativityText"
+                        android:id="@+id/creativeBar">
+
+                        <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+                            android:layout_width="210dp"
+                            android:layout_height="20dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/creativity"
+                            app:rcBackgroundColor="@color/custom_progress_background"
+                            app:rcBackgroundPadding="2dp"
+                            app:rcMax="400"
+                            app:rcProgress="300"
+                            app:rcProgressColor="@color/red"
+                            app:rcRadius="20dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="300"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/creativeScore"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/textSize2"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="/400"
+                            android:layout_marginTop="10dp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/textSize2"/>
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:id="@+id/spatialBox"
+                    android:layout_below="@+id/creativeBox"
+                    android:background="@drawable/rectangle_purple">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:id="@+id/spatial">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:id="@+id/imag6"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/ic_emotional"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/gold"
+                            android:text="SPATIAL FACTOR"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/spatial"
+                        android:id="@+id/spatialText">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="This factor corresponds to the ability to comprehend three-dimensional images and shapes. This factor is quite involved when solving puzzles, figuring out maps etc."
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/textSize2"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/spatialText"
+                        android:id="@+id/spatialBar">
+
+                        <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+                            android:layout_width="210dp"
+                            android:layout_height="20dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/spatia"
+                            app:rcBackgroundColor="@color/custom_progress_background"
+                            app:rcBackgroundPadding="2dp"
+                            app:rcMax="400"
+                            app:rcProgress="100"
+                            app:rcProgressColor="@color/gold"
+                            app:rcRadius="20dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="100"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/spatialScore"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/textSize2"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="/400"
+                            android:layout_marginTop="10dp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/textSize2"/>
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/spatialBox"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:id="@+id/careerReportButton"
+                    app:cardBackgroundColor="@color/dark_purple"
+                    app:cardElevation="5dp"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:textAlignment="center"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="VIEW FULL CAREER REPORT"
+                        android:textColor="@color/white"/>
+
+                </android.support.v7.widget.CardView>
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/cardview4"
+            android:id="@+id/coursesRecyclerViewContainer">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Recommended Courses"
+                android:layout_margin="10dp"
+                android:layout_marginBottom="20dp"
+                android:textSize="15sp"
+                android:id="@+id/textView16"
+                android:textColor="@color/filter_blue"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/coursesRecyclerView"
+                android:layout_below="@+id/textView16"
+                android:layout_alignParentStart="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/coursesRecyclerViewContainer"
+            android:id="@+id/shortTermCoursesRecyclerViewContainer">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Recommended Short Term Courses"
+                android:layout_margin="10dp"
+                android:textSize="15sp"
+                android:id="@+id/textView13"
+                android:textColor="@color/filter_blue"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/shortTermCoursesRecyclerView"
+                android:layout_below="@+id/textView13"
+                android:layout_alignParentStart="true" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp"
+            android:layout_below="@+id/shortTermCoursesRecyclerViewContainer">
+
+            <RelativeLayout
+                android:id="@+id/disclaimer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/disclaimer_general"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textSize2" />
+            </RelativeLayout>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/disclaimer"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:id="@+id/feedback"
+                app:cardBackgroundColor="@color/filter_blue"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="VIEW CAREER REPORT"
+                    android:textColor="@color/white"/>
+
+            </android.support.v7.widget.CardView>
+        </RelativeLayout>
+</RelativeLayout>
+</ScrollView>

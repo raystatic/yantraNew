@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:id="@+id/bb_level3"
+    tools:context="com.university.yantra.GameBrainBooster.Levels.Level3Activity">
+
+    <com.university.yantra.GameBrainBooster.CustomView
+        android:id="@+id/custom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:layout_marginTop="85dp"
+        android:textColor="#000"
+        android:text="Which is farthest away from us?" />
+
+
+
+
+    <ImageButton
+        android:id="@+id/imageButton6"
+        android:layout_width="120sp"
+        android:layout_height="120sp"
+
+        android:background="@drawable/brain_sun"
+        android:layout_above="@+id/imageButton5"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:id="@+id/imageButton5"
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+
+        android:background="@drawable/brain_moon"
+        android:layout_marginBottom="27dp"
+        android:layout_above="@+id/imageButton4"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="120sp"
+        android:layout_height="80sp"
+        android:background="@drawable/brain_clouds"
+        android:layout_marginBottom="69dp"
+
+        android:layout_above="@+id/imageButton7"
+        android:layout_alignLeft="@+id/imageButton6"
+        android:layout_alignStart="@+id/imageButton6" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:visibility="invisible"
+        android:layout_above="@+id/textView7"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageButton6"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="54dp"
+        android:layout_toEndOf="@+id/imageButton6"
+        android:text="Sun"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView5"
+        android:layout_alignTop="@+id/imageButton5"
+        android:layout_marginTop="49dp"
+        android:text="Moon"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageButton4"
+        android:layout_marginBottom="30dp"
+        android:layout_toEndOf="@+id/imageButton4"
+        android:layout_marginLeft="15dp"
+        android:text="Clouds"
+        android:textSize="20sp"/>
+
+
+    <Button
+        android:id="@+id/imageButton7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/brain_op_buttonanim"
+        android:onClick="onSkip"
+        android:text="skip >>"
+        android:layout_marginBottom="16dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+
+
+
+</RelativeLayout>
+

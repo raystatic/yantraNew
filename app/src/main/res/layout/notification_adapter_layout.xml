@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/tools"
+    app:cardBackgroundColor="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp"
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight=".9"
+            android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="College Name"
+            android:textColor="@color/matteBlack"
+            android:textStyle="bold"
+            android:id="@+id/tv_noti_adapter_college"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/matteBlack"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_noti_adapter_message"
+            android:text="This college is very good. You must take admission for your better future. Else you will get only failure" />
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_marginTop="10dp"
+           android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/matteBlack"
+            android:id="@+id/tv_noti_adapter_timeNumeric"
+            android:layout_below="@+id/tv_noti_adapter_message"
+            android:layout_marginTop="10dp"
+            android:text="18"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="@color/matteBlack"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_noti_adapter_timeText"
+            android:layout_below="@+id/tv_noti_adapter_message"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/tv_noti_adapter_timeNumeric"
+            android:layout_marginLeft="5dp"
+            android:text="hours"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="@color/matteBlack"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_noti_adapter_timeAgo"
+            android:layout_below="@+id/tv_noti_adapter_message"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/tv_noti_adapter_timeText"
+            android:text="ago"
+            android:layout_marginLeft="5dp"/>
+       </LinearLayout>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/card_notif_apply">
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:background="@color/light_black">
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:paddingTop="5dp"
+                   android:paddingBottom="5dp"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/tv_noti_adapter_apply"
+                   android:text="Apply"
+                   android:textColor="@color/white"
+                   android:layout_centerHorizontal="true"/>
+
+           </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_weight="0.1"
+            android:layout_height="100dp"
+            android:id="@+id/img_view_noti_adapter"
+            android:layout_marginLeft="0dp"
+            android:src="@drawable/sample_new3"/>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white"
+    android:backgroundTint="@android:color/white"
+    android:focusable="true"
+    android:clickable="true"
+    android:layout_marginBottom="2dp"
+    custom:cardCornerRadius="0dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:id="@+id/card3"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:backgroundTint="@android:color/white"
+        android:focusable="true"
+        android:clickable="true"
+
+        android:layout_marginBottom="2dp"
+        custom:cardCornerRadius="0dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:id="@+id/testcard">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/testimonials"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:text="Testimonials"
+                android:textColor="@color/dark_purple"
+                android:textSize="20dp"/>
+
+            <com.daimajia.slider.library.SliderLayout
+                android:id="@+id/slider"
+                android:layout_width="match_parent"
+                custom:pager_animation="Accordion"
+                custom:auto_cycle="true"
+                custom:indicator_visibility="visible"
+                custom:pager_animation_span="1100"
+                android:layout_height="170dp" />
+
+            <com.daimajia.slider.library.Indicators.PagerIndicator
+                android:id="@+id/custom_indicator2"
+                style="@style/AndroidImageSlider_Corner_Oval_Orange"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:padding="20dp"
+        android:visibility="gone">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:background="@color/red"
+        android:backgroundTint="@color/red"
+        android:focusable="true"
+        android:clickable="true"
+        android:layout_weight="1"
+        android:layout_marginBottom="2dp"
+        android:layout_marginRight="10dp"
+        custom:cardCornerRadius="0dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:id="@+id/s1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/hp"
+                android:src="@drawable/happy_parent"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="150+"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="18dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Happy Parents"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize2"/>
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:background="@color/green"
+        android:backgroundTint="@color/green"
+        android:focusable="true"
+        android:clickable="true"
+        android:layout_weight="1"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="2dp"
+        custom:cardCornerRadius="0dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:id="@+id/s2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+                android:src="@drawable/research"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1500+"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="18dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hours of Research"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize2"/>
+
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:background="@color/dark_purple"
+        android:backgroundTint="@color/dark_purple"
+        android:focusable="true"
+        android:clickable="true"
+        android:layout_weight="1"
+        android:layout_marginBottom="2dp"
+        custom:cardCornerRadius="0dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:id="@+id/s3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/scientish"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10+"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="18dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Experts"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize2"/>
+
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
